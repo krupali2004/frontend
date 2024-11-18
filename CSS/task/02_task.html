@@ -13,12 +13,14 @@
         .img{
             height: 300px;
             width: 500px;
-            border: 2px solid;
+            border: 2px solid white;
             background: url("https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom1.jpg");
             background-size: 100% 100%;
             background-repeat: no-repeat;
+            background-origin: border-box;
             transform: translate(-20px);
             transition: .5s;
+            font-size: 100%;
         }
         .border{
             height: 200px;
@@ -28,7 +30,7 @@
             transform: translateX(-20px);
             transition: .5s;
             color: white;
-            font-size: 40px;
+            font-size: 30px;
             text-align: right;
             opacity: 0;
         }
@@ -39,16 +41,39 @@
         .img:hover{
             transform: translateX(0px);
         }
-
+        .border h4{
+            text-align: right;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            overflow: hidden;
+            font-family: 'open sens', sans-serif;
+            font-weight: 300;
+        }
+        .border h4 span{
+            font-weight: 800;
+            color: red;
+            line-height: 2em;
+        }
+        .border p{
+            letter-spacing: 6px;
+            font-size: 0.9em;
+            transform: translate3d(-10px,0,0);
+            position: relative;
+            text-align: right;
+        }
     </style>
 
 </head>
 <body>
     <div class="main">
         <div class="img">
-            <div class="border">
-                newarrivels
-                
+            <div class="border"> 
+                <h4>
+                    <span>F</span>
+                   ALL AHEAD
+                </h4>
+                 
+                <p>New Arrivals</p>
             </div>
         </div>
     </div>

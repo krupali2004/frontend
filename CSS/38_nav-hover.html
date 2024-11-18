@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav{
+            display: flex;
+            list-style: none;
+        }
+        .nav-list{
+            background-color: violet;
+            padding: 10px 20px;
+            margin: 0 10px;
+            position: relative;
+        }
+        .list{
+            position: absolute;
+            background-color: lightgreen;
+            top: 100%;
+            left: 0;
+            list-style: none;
+            padding: 10px 15px;
+            display: none;
+            
+        }
+        .nav-list:hover .list{
+            display: block;
+        }
+        .list1{
+            position: absolute;
+            background-color: blueviolet;
+            top: 100%;
+            left: 0;
+            list-style: none;
+            padding: 10px 15px;
+            display: none;
+        }
+        .nav-list:hover .list1{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li class="nav-list">Home
+            <ul class="list">
+                <li class="li-list">Home1</li>
+                <li class="li-list">Home2</li>
+                <li class="li-list">Home3</li>
+                <li class="li-list">Home4</li>
+                <li class="li-list">Home5</li>
+            </ul>
+        </li>
+        <li class="nav-list">women
+            <ul class="list">
+                <li class="li-list">clothing</li>
+                <li class="li-list">watch</li>
+                <li class="li-list">footwear</li>
+                <div class="li-list">bags</div>
+               <div class="li-list">Beuty</div>
+               <div class="li-list">Jewllery</div>
+            </ul>
+        </li>
+        <li class="nav-list">men
+            <ul class="list">
+                <div class="li-list">clothing
+                    <ul class="list1">
+                        <li class="li-list1">Shirts</li>
+                        <li class="li-list1">Ethinc wear</li>
+                        <li class="li-list1">party wear</li>
+                        <li class="li-list1">casul wear</li>
+                    </ul>
+                </div>
+                <div class="li-list">watch</div>
+                <div class="li-list">footwear</div>
+                <div class="li-list">perfumes</div>
+            </ul>
+        </li>
+        <li class="nav-list">help</li>
+    </ul>
+</body>
+</html>
