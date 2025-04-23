@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h3 style="text-align: center; text-decoration: underline; color: red;">Student Registration Form</h3>
+    <div class="container">
+        <form style="background-color: whitesmoke;">
+            <table>
+                <tr>
+                    <td><label for="name">First name:</label></td>
+                    <td><input type="text" placeholder="Enter your first name" size="50" required></td>
+                </tr>
+                
+                <tr>
+                    <td><label for="name">Last name:</label></td>
+                    <td><input type="text" placeholder="Enter your last name"  size="50" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="name">Email:</label></td>
+                    <td><input type="text" placeholder="it should contain@"  size="50" required></td>
+                </tr>
+
+                
+                <tr>
+                    <td><label for="name">Mobile:</label></td>
+                    <td><input type="tel"  size="50" required></td>
+                </tr>
+                
+                <tr>
+                    <td><label for="name">gender</label></td>
+                    <td> 
+                        <input type="radio" name="male" required>male
+                        <input type="radio" name="female" required>female
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="dob">Date of Birth</label></td>
+                    <td><input type="date" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="Address">Address:</label></td>
+                    <td><textarea name="Address" cols="48" rows="5"  required></textarea></td>
+                </tr>
+
+                <tr>
+                    <td><label for="City">City:</label></td>
+                    <td><input type="text" size="50" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="pincode">Pincode:</label></td>
+                    <td><input type="text" size="50" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="State">State:</label></td>
+                    <td><input type="text" size="50" required></td>
+                </tr>
+
+                <tr>
+                    <td><label>Qualification:</label</td>
+                    <td>
+                        <select name="" id="">Select Qualification
+                            <option>BCA</option>
+                            <option>b.com</option>
+                            <option>BA</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>Specialization:</label></td>
+                    <td>
+                        <input type="checkbox" name="data science" required>data science <br>
+                        <input type="checkbox" name="Information Technology" required>Information Technology <br>
+                        <input type="checkbox" name="computer architechure" required>computer architechure <br>
+                        <input type="checkbox" name="tele communication" required>tele communication <br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>Password:</label></td>
+                    <td><input type="password" name="password" size="50" required></td>
+                </tr>
+
+                <tr>
+                    <td><button type="submit" style="background-color: green; color: white;border: green; border-radius: 2px;">Register</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
